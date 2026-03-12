@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 from dotenv import load_dotenv
+
+from persona.agent import ask_harold
 
 load_dotenv()
 
@@ -14,9 +17,14 @@ app.add_middleware(
 )
 
 
+class QueryRequest(BaseModel):
+    question: str
+
+
 @app.post("/query")
-async def query():
-    return {"status": "ok"}
+async def query(request: QueryRequest):
+    result = await ask_harold(request.question)
+    return {"answer": result}
 
 
 @app.post("/query/image")
