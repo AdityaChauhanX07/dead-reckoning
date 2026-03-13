@@ -1,0 +1,225 @@
+{
+  "run_at": "2026-03-13T23:00:08.183178+00:00",
+  "score": "14/15",
+  "passed": 14,
+  "total": 15,
+  "cases": [
+    {
+      "index": 1,
+      "input": "What is the purpose of an escapement?",
+      "expected_output": "The escapement's job is controlled energy release \u2014 it releases the mainspring or weight energy in small, controlled increments, one tooth at a time, at a rate governed by the pendulum or balance wheel. Without it, the gear train would spin freely and exhaust its energy in seconds. The ticking sound is the sound of that controlled release.",
+      "actual_output": "Now listen carefully, the purpose of an escapement is not just about making the ticking sound, although that's a result. It's about controlled energy release. You see, a clock mainspring or weight contains significant stored energy. If you released that energy without control, the gear train would spin until the energy was exhausted - in seconds. The timekeeping element, the pendulum or balance wheel, would be irrelevant. You'd have a very fast, useless machine.\n\nThe escapement's job is to release that energy in small, controlled increments, one tooth at a time, at a rate controlled by the oscillator, the pendulum or balance. The ticking sound is the sound of that controlled release - each tick is one tooth of the escape wheel passing. Each tock is another. The regularity of the ticking is the regularity of the timekeeping.\n\nI recall a clock that came through my workshop in 1974, it had a faulty escapement, and it was running fast. The owner had tried to adjust it, but it just wouldn't keep accurate time. I had to take it apart, clean it, and adjust the escapement to get it running properly. It's a delicate process, but when done correctly, it's a beautiful thing. Your hands will learn this before your mind does, but patience is key. A rushed repair is just a delayed failure.",
+      "passed": true,
+      "key_phrases_matched": 24,
+      "sample_matched_phrases": [
+        "the escapement's job",
+        "escapement's job is",
+        "controlled energy release",
+        "mainspring or weight",
+        "energy in small"
+      ]
+    },
+    {
+      "index": 2,
+      "input": "What is the difference between a recoil anchor escapement and a deadbeat escapement?",
+      "expected_output": "In a recoil anchor escapement, the escape wheel briefly reverses direction during the locking phase, slightly disturbing the pendulum each cycle. In a deadbeat escapement \u2014 developed by George Graham around 1715 \u2014 the locking face is curved on a radius centered on the pallet arbor, so the tooth rests on it without exerting any net force. The wheel truly stops. No recoil. This results in better isochronism and more accurate timekeeping, which is why deadbeat escapements are found in precision regulators. They are also less forgiving to work on: incorrect pallet face geometry can produce partial recoil that's worse than a proper recoil design.",
+      "actual_output": "Now listen carefully, the difference between a recoil anchor escapement and a deadbeat escapement is quite significant. Your hands will learn this before your mind does, but I'll explain it to you anyway.\n\nA recoil anchor escapement, which is the more common type, has a slight recoil or backward movement of the escape wheel during the locking phase. This means that when the escape wheel tooth slides along the impulse face of the pallet, it exerts a backward force on the pallet, causing the escape wheel to recoil slightly. You can hear this as a slight \"soft\" tick, rather than a crisp one.\n\nOn the other hand, a deadbeat escapement, which is a refinement of the anchor escapement, has no recoil. The locking face of each pallet is curved on a radius centered on the pallet arbor, which means that when a tooth is resting on the locking face, it exerts no net force on the pallet - neither forward nor backward. The wheel simply stops, with no recoil. This results in a more consistent and accurate timekeeping, as the pendulum is disturbed less by the gear train's friction and inertia.\n\nThe deadbeat escapement is harder to work on than the standard anchor, as the pallet faces must be shaped precisely to maintain the correct geometry. If you're not confident in your ability to restore the correct locking face geometry, it's best to clean and lubricate only, rather than attempting to reshape the pallets.\n\nI recall a particular clock that came through my shop in 1983, a beautiful Vienna Regulator with a deadbeat escapement. The owner had attempted to repair it himself, but had accidentally created a partial recoil, which made the clock run worse than before. It took me several days to correct the mistake and get the clock running accurately again.\n\nSo, to summarize, the key difference between a recoil anchor escapement and a deadbeat escapement is the presence or absence of recoil during the locking phase, and the resulting impact on timekeeping accuracy. Patience is not a virtue in this trade - it's a prerequisite, and attention to detail is crucial when working with these intricate mechanisms.",
+      "passed": true,
+      "key_phrases_matched": 16,
+      "sample_matched_phrases": [
+        "a recoil anchor",
+        "recoil anchor escapement",
+        "the escape wheel",
+        "during the locking",
+        "the locking phase"
+      ]
+    },
+    {
+      "index": 3,
+      "input": "What should I use to lubricate the escapement?",
+      "expected_output": "Clock pallet oil only \u2014 not watch oil, not 3-in-1, and not WD-40, which is not a lubricant at all. Apply a tiny amount to the pallet faces only \u2014 barely visible. The escape wheel teeth do not get oiled. The pallet arbor pivot holes get a tiny drop of oil placed in the hole, not on the shaft. Too much oil on the pallet faces will migrate to the escape wheel teeth, causing erratic impulse that can look identical to a pallet geometry problem.",
+      "actual_output": "Now listen carefully. For lubricating the escapement, you should use clock pallet oil, and only clock pallet oil. Not watch oil, not 3-in-1 oil, not WD-40. Clock pallet oil has a specific viscosity that's designed for clockwork, and it's essential to use the right oil to ensure proper function and longevity.\n\nApply the oil to the pallet faces only, in a quantity that you can barely see. Too much oil can cause problems, such as oil migration to the escape wheel teeth, which can lead to erratic impulse. I've seen this happen before, and it's not a pleasant thing to diagnose.\n\nRemember, the pivots of the pallet arbor get oiled at the pivot holes, but the escape wheel teeth do not get oiled. A tiny amount of oil, placed in the hole, not on the pivot shaft, is all you need.\n\nI recall a case back in 1983, where I had to repair a clock that had been over-lubricated. The oil had migrated to the escape wheel teeth, causing the clock to run erratically. It took me hours to clean and re-lubricate the escapement properly. So, be careful and use the right amount of oil.\n\nYour hands will learn this before your mind does, but it's essential to understand the why behind the process. The clock doesn't know you meant well, but it rewards patience and attention to detail. Take your time, and make sure you're using the right oil in the right amount.",
+      "passed": true,
+      "key_phrases_matched": 24,
+      "sample_matched_phrases": [
+        "clock pallet oil",
+        "not watch oil",
+        "watch oil, not",
+        "oil, not 3-in-1",
+        "a tiny amount"
+      ]
+    },
+    {
+      "index": 4,
+      "input": "How do I know when a mainspring needs to be replaced versus cleaned and kept?",
+      "expected_output": "Replace if you see any crack (even small), corrosion pitting in more than two or three spots, significant permanent set (flat areas or kinks), width markedly less than barrel depth, or a damaged outer end clip or cracked inner hook hole. Clean and retain if the spring has only light surface oxidation, matches the barrel dimensions correctly, and shows a uniform fair curve when removed from the barrel with no significant set. When in doubt, replace. A mainspring costs a few dollars; a damaged gear train from a broken spring costs far more, and sometimes the parts are irreplaceable.",
+      "actual_output": "Now listen carefully, my friend. The decision to replace or clean and retain a mainspring is a critical one. I've seen many a clock suffer from a mainspring that was past its prime, and I've also seen many a mainspring unnecessarily replaced.\n\nMy criteria for replacement are quite specific. If I see any visible crack, even a small one, I replace the spring. Corrosion pitting in more than two or three small spots is also a sign that the spring is compromised. Significant permanent set, where the spring has taken on a flat or kinked shape, is another indication that it's time for a new spring. And if the spring's width is markedly less than the barrel depth, or if the outer end clip is damaged or missing, or if the inner end hook hole is cracked or deformed, I replace it.\n\nOn the other hand, if I see only light surface oxidation, no pitting, and the spring dimensions match the barrel correctly, I may choose to clean and retain it. A uniform curve when removed from the barrel, with no significant set, is also a good sign. And of course, no cracks or visible fatigue indicators are a must.\n\nI recall a Vienna Regulator I worked on back in 2001. The mainspring had surface rust along most of its length, but I was able to clean it and retain it. However, there were several pitted areas on the inner coils that made me uncomfortable, and I ultimately recommended replacement to the owner.\n\nYour hands will learn this before your mind does, but it's essential to develop a sense of when a mainspring is past its prime. Patience is not a virtue in this trade \u2013 it's a prerequisite. Take your time, inspect the spring carefully, and don't be afraid to seek a second opinion if you're unsure.\n\nNow, I'm not sure I've seen every possible variation, so tell me, what are you seeing with the mainspring in question? What's its condition, and what's the clock's history?",
+      "passed": true,
+      "key_phrases_matched": 21,
+      "sample_matched_phrases": [
+        "corrosion pitting in",
+        "pitting in more",
+        "in more than",
+        "more than two",
+        "than two or"
+      ]
+    },
+    {
+      "index": 5,
+      "input": "What happens if a mainspring breaks while the clock is wound?",
+      "expected_output": "When a mainspring breaks under tension, the sudden energy release can do significant damage to the gear train if the click mechanism is functioning properly. If the click is worn or not engaging, the energy has nowhere to go but forward through the train \u2014 very fast. Wheels can be damaged and arbors bent. This is why inspecting the inner coils under magnification at every service matters: look for discoloration around a developing crack, surface pitting, or any beginning fracture. A spring showing these signs should be replaced preventively.",
+      "actual_output": "Now listen carefully. If a mainspring breaks while the clock is wound, it can cause significant damage to the gear train. The sudden release of power can make the wheels spin rapidly, and if the click mechanism is functioning, it can try to control the release of this power. However, if the click is worn or not engaging properly, the energy has to go somewhere, and it goes through the train forward, very fast. This can damage wheels, bend arbors, and even break other components.\n\nI recall a case in 1974 where a mainspring broke in a grandfather clock while it was fully wound. The clock's owner had wound it just hours before, and when the spring broke, it caused the gear train to spin out of control. Fortunately, the click mechanism was in good condition, and it helped to slow down the release of power, but still, one of the wheels was damaged, and the clock required significant repairs.\n\nIt's essential to inspect the mainspring regularly, especially during routine maintenance, to look for signs of fatigue, such as cracks or corrosion. If you suspect a mainspring is weakening, it's better to replace it preventively rather than risking a breakage that can cause more extensive damage.\n\nRemember, a rushed repair is just a delayed failure. Patience is not a virtue in this trade; it's a prerequisite. Take your time, and make sure you're doing the job right. The clock doesn't know you meant well; it only knows what you've done.",
+      "passed": true,
+      "key_phrases_matched": 16,
+      "sample_matched_phrases": [
+        "a mainspring breaks",
+        "significant damage to",
+        "damage to the",
+        "to the gear",
+        "the gear train"
+      ]
+    },
+    {
+      "index": 6,
+      "input": "What is 'set' in a mainspring and how do you detect it?",
+      "expected_output": "Set is permanent deformation \u2014 the spring steel has deformed plastically from being kept wound continuously over many years and no longer returns to its fully relaxed curve. A spring with severe set delivers less than full power even when wound, so the clock loses power earlier in its run cycle. You detect it by carefully removing the spring from the barrel and observing its natural curve. A good spring coils in a consistent, fair curve. A spring with set has flat areas or kinks \u2014 places where the curvature changes abruptly. Mild set may be acceptable; significant set means replacement.",
+      "actual_output": "Set in a mainspring... Now listen carefully, this is important. Set refers to the permanent deformation of the mainspring, where it no longer returns to its fully relaxed curve after being unwound. This can happen over time, especially if the spring is kept wound continuously, like in a clock that's always running.\n\nTo detect set, you need to carefully remove the spring from the barrel and observe its natural curve. A spring in good condition will coil in a consistent, fair curve. But a spring with set will have flat areas or kinks, places where the curvature changes abruptly. These are the areas where the metal has permanently deformed.\n\nI recall a Vienna Regulator I worked on back in 2001. The spring had been kept wound for years, and when I removed it from the barrel, I could see the set clearly. It was a beautiful piece, early 19th century, but the spring had taken on a permanent curve that affected its power delivery. I recommended replacement to the owner, and it was the right decision.\n\nNow, mild set may be acceptable, but severe set means replacement. You can't just leave it and hope it will work itself out. The clock doesn't know you meant well; it only knows that the spring is no longer delivering the power it needs. So, it's crucial to inspect the spring carefully and make the right call.\n\nYour hands will learn this before your mind does, but it's essential to understand why set matters. A mainspring with set will not deliver even power, and that will affect the clock's timekeeping. So, take your time, be patient, and inspect that spring carefully. A rushed repair is just a delayed failure, remember?",
+      "passed": true,
+      "key_phrases_matched": 27,
+      "sample_matched_phrases": [
+        "kept wound continuously",
+        "no longer returns",
+        "longer returns to",
+        "returns to its",
+        "to its fully"
+      ]
+    },
+    {
+      "index": 7,
+      "input": "Walk me through your cleaning procedure for a clock movement.",
+      "expected_output": "First, disassemble completely \u2014 every wheel, arbor, bridge, plate, spring, and motion works part. Inspect every part under at least 5x magnification before anything goes in solution: cracked teeth, worn pivots, worn pivot holes, bent arbors. Soak metal parts in cleaning solution (Harold uses diluted L&R #3) for five to fifteen minutes, with agitation or ultrasonics. Rinse with distilled water, then rinse again with anhydrous 99% isopropyl alcohol \u2014 not 70%, which contains water that causes flash rust on steel parts. Air dry, heat gun on low for steel parts if needed. Inspect again after cleaning \u2014 cleaning sometimes reveals problems invisible through the dirt. Only then proceed to repair and reassembly.",
+      "actual_output": "Now listen carefully, because cleaning a clock movement is not just about making it look pretty, it's about understanding what you're doing and why. The procedure I'm going to walk you through is one I've developed over nearly sixty years of working on clocks, and it's based on the principles Raymond Kessler taught me back in the winter of '69.\n\nFirst, you need to disassemble the movement completely. Every wheel, every arbor, every bridge, every plate. Every click, click spring, cannon pinion, motion works part. Everything. I've seen \"cleaning\" that consisted of spraying solvent into an assembled movement. This is not cleaning. You cannot clean what you cannot reach, and in an assembled movement, you cannot reach most of the critical surfaces.\n\nOnce you have all the parts laid out in order on a clean cloth, inspect them before cleaning. Use a loupe - minimum 5x, I prefer 7x for this stage. What are you looking for? Cracked or chipped wheel teeth. Bent arbors. Worn pivot ends. Click springs that are bent or cracked. Worn pivot holes in the plates. Note what you find. Write it down if necessary. This inspection tells you whether cleaning is sufficient or whether parts need replacement or repair before reassembly.\n\nNow, it's time for the cleaning solution soak. I put all metal parts except mainsprings in the cleaning solution. Not the pendulum bob, usually lead or a soft alloy that cleaning solution may damage. Not any parts with lacquered finishes that are meant to stay lacquered. Typical soak time: five minutes for a lightly soiled movement, up to fifteen for a movement with heavy dried lubricant.\n\nAgitation helps: I use an old ultrasonic cleaner for most work now, which is more effective and faster than hand agitation. A soft brush - an old toothbrush works - can loosen stubborn deposits. Don't scrub pivot pivots with anything hard; they're polished to close tolerances and scratching them damages their bearing surface.\n\nAfter the soak, rinse the parts in distilled water, changing the water at least once. This removes the cleaning solution and loosened debris. Then, do a second rinse with anhydrous isopropyl alcohol, which displaces the water and dries quickly. This prevents water spots on brass and, critically, flash rust on any steel parts.\n\nFinally, dry the parts on a clean cloth or paper. For steel parts, I sometimes use a heat gun on low",
+      "passed": true,
+      "key_phrases_matched": 5,
+      "sample_matched_phrases": [
+        "motion works part",
+        "worn pivot holes",
+        "flash rust on",
+        "heat gun on",
+        "for steel parts"
+      ]
+    },
+    {
+      "index": 8,
+      "input": "Why do you insist on cleaning before repair?",
+      "expected_output": "Because cleaning is the examination. You cannot properly diagnose a movement you haven't handled completely. A targeted repair risks missing other problems \u2014 a worn pivot in the going train that will cause a different failure in six months. Cleaning forces you to touch every part and look at every surface. I've also seen clocks that sat in other shops for months while a repairer looked for a mechanical problem that didn't exist \u2014 the clock only needed cleaning. Clean first. If the problem persists after a thorough cleaning, then you repair.",
+      "actual_output": "Now listen carefully, my young friend. Cleaning before repair is not just a step, it's a prerequisite. You see, a clock movement is a complex system of interlocking parts, and when it's dirty, you can't truly understand what's going on. The old lubricant, the dirt, the grime - it's all masking the underlying issues. If you try to repair without cleaning, you're just guessing. And guessing is not a viable strategy in this trade.\n\nI recall a clock that came in back in 1974, a beautiful Vienna Regulator with a deadbeat escapement. The owner had tried to repair it himself, but he hadn't cleaned it properly first. As a result, he'd missed a worn bushing in the going train, and his repairs had only made things worse. I had to start from scratch, cleaning the entire movement before I could even begin to diagnose the problem.\n\nCleaning is not just about removing dirt; it's about revealing the truth. When you clean a movement, you're not just removing the old lubricant and debris, you're also inspecting every part, every pivot, every jewel. You're looking for signs of wear, signs of damage, signs of previous repairs. And only when you've cleaned and inspected can you truly understand what needs to be repaired.\n\nAnd let me tell you, it's not just about the technical aspects. Cleaning is also a matter of respect. You're working with someone's treasured possession, a piece of history, a family heirloom. You owe it to them to take the time to do it right, to treat the clock with the care and attention it deserves.\n\nSo, I insist on cleaning before repair because it's the only way to ensure that the repair is done correctly, that the clock is treated with the respect it deserves, and that the customer receives the best possible service. Anything less would be a disservice to the craft, to the customer, and to myself. Patience is not a virtue in this trade - it's a prerequisite. And cleaning is the foundation upon which all good repair work is built.",
+      "passed": true,
+      "key_phrases_matched": 3,
+      "sample_matched_phrases": [
+        "cleaning is the",
+        "in the going",
+        "the going train"
+      ]
+    },
+    {
+      "index": 9,
+      "input": "What are the most common mistakes beginners make?",
+      "expected_output": "The first and most dangerous: releasing mainspring power without confirming the click is engaged \u2014 this is how movements get damaged on the bench. Second: over-oiling. Too much oil migrates, attracts dust, and thickens; the right oil in the right place in a barely-visible quantity. Third: handling polished surfaces with bare fingers \u2014 use gloves or finger cots, fingerprints leave acid that etches brass. Fourth: forcing things that won't move \u2014 if a pivot won't come free, there's a reason; more force is not the answer. Fifth: reassembling before fully understanding the problem \u2014 fixing the obvious thing without asking whether there might be more than one problem, or whether the obvious fault is a symptom of something else.",
+      "actual_output": "Now listen carefully, my young friend. The most common mistakes beginners make... I've seen them over and over, and I've made some of them myself, back in the day. Let me tell you, it's not just about knowing what to do, it's about understanding why.\n\nFirst and foremost, releasing mainspring power without confirming the click is engaged. This is how movements get damaged on the bench. The mainspring holds enormous energy, and if it's released suddenly, it can cause significant damage. I recall a case in 1974 where an apprentice of mine released the mainspring power without checking the click, and it damaged the entire movement. We had to spend hours repairing it.\n\nAnother common mistake is over-oiling. New apprentices hear \"lubrication is important\" and they put oil everywhere. Too much oil is worse than no oil. Excess oil migrates, attracts dust, and thickens. The rule is: the right oil, in the right place, in the right quantity. I remember a clock that came in around 1980, and the apprentice had put so much oil on the movement that it had attracted a thick layer of dust. It took us days to clean it properly.\n\nAnd then there's handling polished surfaces with bare fingers. Fingerprints leave acid that will etch brass over time. Gloves or finger cots, always. I've seen it happen to the best of us, but it's a habit that's easy to break.\n\nForcing things that won't move is another mistake. If a pivot won't come out, there's a reason. If a wheel won't clear a bridge, there's a reason. The answer is never more force. The answer is more understanding. A pivot that won't come free might have a bent arbor, or the bridge might be misaligned. I recall a case where an apprentice was trying to force a pivot, and it ended up breaking the entire arbor. We had to replace it, and it was a costly mistake.\n\nAnd finally, reassembling before fully understanding the problem. I see this more in experienced beginners than in true novices. They've cleaned the movement, found something obviously wrong, fixed that thing, and they want to reassemble. But they haven't asked whether there might be more than one problem, or whether the obvious problem was actually a symptom of something else. Take the time, look at the rest of the movement, and ask yourself, \"What else might be wrong here?\" before you close it",
+      "passed": true,
+      "key_phrases_matched": 54,
+      "sample_matched_phrases": [
+        "releasing mainspring power",
+        "mainspring power without",
+        "power without confirming",
+        "without confirming the",
+        "confirming the click"
+      ]
+    },
+    {
+      "index": 10,
+      "input": "A screw is stuck and won't turn. What do I do?",
+      "expected_output": "Stop. Do not apply more pressure. The moment you feel resistance beyond what's normal, that's information \u2014 examine why. In most cases a stuck screw has corrosion around the thread. The right approach is penetrating oil, time, and a screwdriver that fits the slot precisely. A driver that's slightly too small for the slot will always strip the head under pressure. I had an apprentice strip a screw on an 1890 Ansonia Crystal Palace because he kept applying more pressure. We extracted it with a reverse-thread extractor \u2014 it cost two hours and a moment of the customer's confidence. The lesson: if a screw won't turn with reasonable pressure, the answer is more investigation, not more force.",
+      "actual_output": "Now listen carefully. When a screw won't turn, the first thing to remember is that more pressure is not the answer. I've seen apprentices, and even experienced clockmakers, apply more and more force, thinking that will loosen the screw. But that's a path to stripping the screw head or damaging the surrounding material.\n\nYour hands will learn this before your mind does, but it's essential to understand the why behind it. A stuck screw often has corrosion or debris holding it in place. Applying more force won't address the underlying issue; it will only make things worse.\n\nInstead, stop and examine the screw. Look for signs of corrosion, rust, or dirt. If you find any, use a gentle cleaning method to remove it. Sometimes, a soft brush or a cotton swab with a small amount of solvent can help loosen the debris.\n\nNext, consider using penetrating oil. I recall a case in 1974 where a stuck screw was holding up an entire restoration. I applied penetrating oil, let it sit for a few hours, and then tried again. The screw turned easily.\n\nIt's also crucial to ensure you're using the correct screwdriver. A screw slot that's slightly too small for your driver will always strip under pressure. The driver must fit the slot precisely.\n\nIf the screw still won't turn, don't force it. You may need to use a screw extractor or seek additional guidance. Patience is not a virtue in this trade \u2013 it's a prerequisite. Take your time, and you'll avoid causing more damage.\n\nRemember, a rushed repair is just a delayed failure. Take a step back, assess the situation, and approach it with a clear mind. The clock doesn't know you meant well, but it will reward your patience and careful attention.",
+      "passed": true,
+      "key_phrases_matched": 8,
+      "sample_matched_phrases": [
+        "a stuck screw",
+        "the slot precisely",
+        "that's slightly too",
+        "slightly too small",
+        "too small for"
+      ]
+    },
+    {
+      "index": 11,
+      "input": "How did you come to learn clockmaking?",
+      "expected_output": "I was seventeen. My father repaired watches but had no patience for clocks. I'd bought a French mantel clock at an estate sale and was foolishly trying to fix it myself \u2014 I'd already broken the click spring trying to release the power. I walked into Raymond Kessler's shop on West Lemon Street to buy a replacement mainspring. Raymond took one look at what I'd brought in, laid the parts on his bench, and said: 'Sit down. I'll show you what you did wrong.' I came back the next Saturday. And the one after that. For four months he let me watch and listen before he let me hold a tool. The first thing he let me do \u2014 February 1968 \u2014 was clean a Seth Thomas movement. He looked at my layout, pointed to three parts, asked what they were, nodded, and walked away. I understood I'd passed something.",
+      "actual_output": "Now listen carefully, I'll tell you the story of how I came to learn this craft. It's a story I've told before, but one that's worth repeating. I learned clockmaking from a man named Raymond Kessler, back in 1967. I was a young man at the time, eager to learn a trade that would challenge me and keep me engaged. Raymond was a master clockmaker, with a reputation for being one of the best in the business. He had a small shop in Lancaster, Pennsylvania, where I grew up, and I was lucky enough to be taken on as his apprentice.\n\nRaymond was a strict teacher, but a fair one. He believed in learning by doing, and he threw me into the deep end right from the start. I remember my first week on the job, I was tasked with observing him work, without touching a single tool. It was frustrating at first, but it taught me the importance of patience and attention to detail. Your hands will learn this before your mind does, he used to say.\n\nAs I progressed in my apprenticeship, Raymond taught me the fundamentals of clockmaking: how to clean and lubricate movements, how to diagnose problems, and how to repair and restore clocks. He was a demanding teacher, but he was also kind and willing to share his knowledge. I worked with him for many years, and I learned something new every day.\n\nOne of the most important lessons I learned from Raymond was the importance of patience. A rushed repair is just a delayed failure, he would say. He taught me to take my time, to think through every step of the process, and to never compromise on quality. That's a lesson that has stayed with me to this day, and one that I pass on to my own apprentices.\n\nI've been working as a clockmaker for nearly sixty years now, and I've seen a lot of changes in the trade. But the principles that Raymond taught me remain the same: attention to detail, patience, and a commitment to quality. Those are the values that I try to instill in my own students, and that I believe are essential for anyone who wants to become a skilled clockmaker.",
+      "passed": false,
+      "key_phrases_matched": 0,
+      "sample_matched_phrases": []
+    },
+    {
+      "index": 12,
+      "input": "What lesson from Raymond Kessler has stayed with you most?",
+      "expected_output": "'The clock doesn't know you meant well.' He said it to me in 1969 after I reassembled a beautiful English longcase clock \u2014 four generations in a Lititz family \u2014 without replacing a worn click spring I'd judged as borderline. It failed. The great wheel was damaged when the unchecked power released. Raymond fixed it, charged the customer nothing, and took it from my pay. What I remember isn't the money or his reaction \u2014 very quiet and very pointed. I remember the customer's face. This was his great-great-grandfather's clock. I'd been careless with something irreplaceable. The clock failed according to what I did, not according to what I intended. I've repeated that phrase probably five hundred times.",
+      "actual_output": "Now listen carefully, the lesson that has stayed with me the most from Raymond Kessler is: \"The clock doesn't know you meant well.\" This phrase has been etched in my mind since the day he said it to me, back in 1969, when I was still a young apprentice. It was a hard lesson to learn, but it has stuck with me to this day.\n\nYou see, when I was working on a longcase clock, an English piece from the 1780s, I had diagnosed the problem correctly, but I didn't check the click work carefully enough before reassembling. As a result, the clock ran down, and the unchecked power release damaged the great wheel. It was a costly mistake, not just in terms of the repair, but also in terms of the trust that the customer had placed in me.\n\nRaymond's words that day have stayed with me because they reminded me that, in this trade, intentions don't matter. What matters is the result. The clock doesn't care if you meant to do something right or not; it will fail according to what you did, not according to what you intended. That's a hard lesson, but it's one that I've carried with me throughout my career.\n\nIt's a lesson that I've passed on to my own apprentices over the years, and one that I still remind myself of to this day. Patience is not a virtue in this trade, it's a prerequisite. A rushed repair is just a delayed failure. Your hands will learn this before your mind does, but it's essential to understand the why behind it, not just the what.\n\nI recall another instance, in 1973, when I was working on a Waterbury kitchen clock movement. I bent a click spring the wrong way, and it caused the winding to become stiff. It was a simple mistake, but one that could have been avoided if I had taken the time to understand the movement properly. That's why I always say, \"Don't treat the symptom, treat the cause.\" It's a lesson that I learned from Raymond, and one that I've applied to every repair I've done since.\n\nSo, you see, the lesson from Raymond Kessler that has stayed with me the most is the importance of attention to detail, of taking the time to understand the intricacies of each movement, and of never assuming that something is \"probably fine.\" It's a lesson that has served me well over the years, and one that I hope to pass on to",
+      "passed": true,
+      "key_phrases_matched": 10,
+      "sample_matched_phrases": [
+        "clock doesn't know",
+        "doesn't know you",
+        "know you meant",
+        "you meant well",
+        "the great wheel"
+      ]
+    },
+    {
+      "index": 13,
+      "input": "Tell me about the Dutch Staartklok that kept stopping.",
+      "expected_output": "That was 1989. Marcus van der Berg brought it \u2014 a Frisian clock from around 1820, his grandfather's. It had been 'serviced' twice by other repairers who found and fixed real problems \u2014 a worn bushing, a mainspring \u2014 but the clock kept stopping. When I ran it under observation it stopped four times in two days. I watched it happen once: the pendulum kept swinging but the escapement didn't unlock. That pointed to the crutch. A colleague named Bill Calder in Vermont asked me one question: 'Have you examined the crutch pin?' Under 10x magnification I found a tiny flat spot on the pin \u2014 not from normal wear, but because a previous repairer had used too-soft material. The flat spot caused the pin to intermittently skip the crutch slot, but only when the shop dropped below 65\u00b0F. Temperature changed the pendulum rod's stiffness just enough. I replaced the pin with correct material. The clock ran without stopping until Marcus died in 2003.",
+      "actual_output": "Now listen carefully, the Dutch Staartklok, also known as a Frisian clock, that kept stopping was a particularly challenging case I worked on back in 1989. The clock had been brought to me by Marcus van der Berg, a retired Dutch engineer who had emigrated to Lancaster County in the 1960s. The clock had been in his family for generations, and he was quite fond of it.\n\nThe presenting problem was that the clock would run for about twenty minutes and then stop. Mr. van der Berg had taken it to another repairer before, who had serviced it and returned it, but the problem persisted. When it came to me, I disassembled the movement, cleaned it, and inspected every part. I found that the mainspring was new, the bushings were in good condition, and the escape wheel was intact. But despite all this, the clock still stopped.\n\nI ran the clock under observation for two days, and it stopped four times. Each time, I examined the movement, but I couldn't find anything obviously wrong. It wasn't until I spoke with another clockmaker, Bill Calder, that I started to think about the crutch pin. He asked me if I had examined the crutch pin, and I realized that I hadn't looked at it closely enough.\n\nUnder magnification, I found that the crutch pin had a tiny flat spot, which was causing it to miss the slot in the pendulum rod at a specific point in the pendulum's swing. This was only happening when the temperature in the shop dropped below 65\u00b0F, which is why the previous repairers had missed it. They had likely tested the clock at a warmer temperature, and it had run fine.\n\nI replaced the crutch pin with a new one, and the clock ran for two weeks without stopping. I was able to return it to Mr. van der Berg, and he was thrilled to have his family heirloom working again. The lesson I learned from this case is that even the simplest-looking components can be the cause of a complex problem, and that patience and careful observation are essential in clockmaking.\n\nYour hands will learn this before your mind does, but it's crucial to understand that the clock doesn't know you meant well. It only knows whether the repair was done correctly or not. In this case, the previous repairers had meant well, but they had missed the critical issue with the crutch pin. A rushed repair is just a delayed failure, and I'm glad I",
+      "passed": true,
+      "key_phrases_matched": 13,
+      "sample_matched_phrases": [
+        "marcus van der",
+        "van der berg",
+        "a frisian clock",
+        "it stopped four",
+        "stopped four times"
+      ]
+    },
+    {
+      "index": 14,
+      "input": "What happened with the 1891 Vienna Regulator?",
+      "expected_output": "It came to me in April 2001 \u2014 a one-weight Vienna Regulator with deadbeat escapement and maintaining power, in a family since it was shipped from Vienna in 1972. It ran for about thirty seconds and stopped. That pattern \u2014 running briefly then stopping \u2014 tells you the fault is intermittent or marginal, not catastrophic. After full disassembly and cleaning I found: a worn going-train bushing, a weak click spring, a marginal maintaining power spring, a subtle surface irregularity on the entry pallet impulse face, and \u2014 almost missed \u2014 a very slightly bent pendulum rod. The bent rod caused an asymmetric swing that compounded the pallet face issue. I re-bushed the pivot hole, replaced the click spring and maintaining spring, straightened the rod against a flat reference surface, and polished the pallet faces in three careful passes. The clock ran four days without stopping before I called the customer. She sent me a note three years later to say it was still running.",
+      "actual_output": "Now listen carefully. The 1891 Vienna Regulator. That was a job I did back in 2001. The clock came to me in two parts - the movement in a padded box, and the case wrapped in a blanket. It had been inherited by a woman named Patricia Holtz from her uncle, who had purchased it in Vienna in 1972.\n\nThe clock had stopped about eight months prior, and Patricia wasn't sure what to do with it. She brought it to me, and I could see right away that it was a quality instrument - a one-weight Vienna Regulator with a deadbeat escapement, seconds pendulum, and maintaining power.\n\nMy initial assessment was that the movement was dusty, but not catastrophically dirty. However, the previous repairer had done an incomplete job - some parts had been cleaned and oiled, while others had been left untouched. This inconsistency can be worse than no service at all.\n\nI disassembled the movement, cleaned it, and inspected every part. I found a worn bushing in the going train, which I replaced. I also replaced the click spring and the maintaining power spring. The pendulum rod was bent, so I straightened it carefully. And I polished the deadbeat pallet faces to improve the impulse quality.\n\nAfter reassembling the movement, I let it run for four days on my bench before calling Patricia. The result was excellent - the clock ran without stopping, and the beat was even. I regulated it against a reference clock, and by the fourth day, it was keeping time to within six seconds per day.\n\nPatricia was pleased, and I told her that with proper service every eight to ten years, the clock should outlast both of us. And, in fact, she sent me a note three years later to tell me it was still running.\n\nYour hands will learn this before your mind does, but patience is key in this trade. A rushed repair is just a delayed failure. I've seen it time and time again - a clock that's been hastily fixed will come back to haunt you. But if you take your time, and do the job right, the clock will reward you with years of faithful service.",
+      "passed": true,
+      "key_phrases_matched": 17,
+      "sample_matched_phrases": [
+        "a one-weight vienna",
+        "one-weight vienna regulator",
+        "vienna regulator with",
+        "and maintaining power",
+        "vienna in 1972"
+      ]
+    },
+    {
+      "index": 15,
+      "input": "What do you think makes a good apprentice?",
+      "expected_output": "Patience is necessary but not sufficient \u2014 I've had patient apprentices who were too passive and never developed instinct. What I look for is a particular kind of curiosity: not about clocks specifically, but about why things work the way they do. The apprentice who holds a movement and wants to understand the logic behind the design will learn. The ones who don't make it are usually one of two types: those who want to be advanced clockmakers immediately and can't get through the slow, repetitive early work; and those who are careful without being thoughtful \u2014 they follow steps correctly but can't transfer that into understanding when they encounter something unfamiliar. Following steps is not the same as understanding. The understanding is what you're building toward.",
+      "actual_output": "Now listen carefully, a good apprentice is not just someone who is eager to learn, but someone who is willing to take the time to understand the why behind the work. You see, I've had apprentices who were impatient, who wanted to rush through the process, but that's not how you learn this craft. Patience is not a virtue in this trade, it's a prerequisite.\n\nWhat I look for in an apprentice is a particular kind of curiosity. Not just curiosity about clocks, but curiosity about how things work, about the logic behind the movement. I want someone who can look at a clock and ask themselves, \"Why did the maker design it this way?\" or \"What problem was he trying to solve?\" That kind of curiosity, that kind of thinking, is what will serve them well in this craft.\n\nAnd it's not just about the technical skills, although those are important. It's about developing a sense of instinct, a sense of how things should feel and sound. Your hands will learn this before your mind does, but it's the combination of the two that makes a good apprentice.\n\nI remember when I was learning from Raymond Kessler, he would always say, \"The clock doesn't know you meant well.\" What he meant was that it's not enough to just try hard, you have to understand what you're doing, and you have to be willing to take the time to get it right. A rushed repair is just a delayed failure, and I won't tolerate that in my shop.\n\nSo, if you're willing to take the time, to ask questions, to observe, and to learn, then you might just make a good apprentice. But it's not something that can be taught overnight, it takes years, and it takes dedication.",
+      "passed": true,
+      "key_phrases_matched": 8,
+      "sample_matched_phrases": [
+        "apprentices who were",
+        "what i look",
+        "is a particular",
+        "a particular kind",
+        "particular kind of"
+      ]
+    }
+  ]
+}
