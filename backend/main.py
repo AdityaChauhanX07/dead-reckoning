@@ -8,10 +8,6 @@ from vision.image_handler import analyze_clock_image
 
 load_dotenv()
 
-import os
-print("AGENT_ENDPOINT:", os.getenv("AGENT_ENDPOINT"))
-print("AGENT_ACCESS_KEY:", os.getenv("AGENT_ACCESS_KEY", "")[:10])
-
 app = FastAPI(title="dead-reckoning")
 
 app.add_middleware(
