@@ -9,6 +9,7 @@ load_dotenv(Path(__file__).parents[2] / ".env")
 
 API_KEY = os.environ["DIGITALOCEAN_API_KEY"]
 
+# files will be uploaded separately after KB creation
 payload = {
     "name": "harold-jennings",
     "region": "tor1",
