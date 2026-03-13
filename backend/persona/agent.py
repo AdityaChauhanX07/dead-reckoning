@@ -23,6 +23,30 @@ async def ask_harold(question: str) -> str:
             response = await client.post(url, headers=headers, json=body)
             response.raise_for_status()
             data = response.json()
-            return data["choices"][0]["message"]["content"]
+            # Response shape (OpenAI-compatible chat completion):
+            # {
+            #   "id": str,
+            #   "object": "chat.completion",
+            #   "created": int,
+            #   "model": str,
+            #   "choices": [
+            #     {
+            #       "index": int,
+            #       "finish_reason": "stop" | "length" | "tool_calls" | "content_filter",
+            #       "message": {
+            #         "role": "assistant",
+            #         "content": str | null,   # null if refusal or tool_calls
+            #         "refusal": str | null,
+            #         "tool_calls": [...] | null
+            #       }
+            #     }
+            #   ],
+            #   "usage": { "prompt_tokens": int, "completion_tokens": int, "total_tokens": int }
+            # }
+            content = data["choices"][0]["message"]["content"]
+            if content is None:
+                refusal = data["choices"][0]["message"].get("refusal")
+                raise ValueError(refusal or "No content returned")
+            return content
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Harold is unavailable: {e}")
