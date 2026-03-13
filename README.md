@@ -228,6 +228,6 @@ MIT
 
 ---
 
-*dead-reckoning was built for the DigitalOcean Gradient AI Hackathon, 2025.*
+*dead-reckoning was built for the DigitalOcean Gradient AI Hackathon, 2026.*
 
 *The name comes from the navigational technique of estimating one's current position using a known past position, speed, and direction — without external reference. A clockmaker reading a movement does something similar: working forward from what the parts reveal, estimating what happened, finding the way.*

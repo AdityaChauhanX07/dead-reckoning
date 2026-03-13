@@ -11,13 +11,16 @@ KB_UUID = os.environ["KNOWLEDGE_BASE_UUID"]
 
 files = sorted(Path(__file__).parents[2].glob("data/harold/**/*.md"))
 
+url = f"https://api.digitalocean.com/v2/gen-ai/knowledge_bases/{KB_UUID}/data_sources"
+print(url)
+
 for path in files:
     with path.open("rb") as f:
         response = httpx.post(
-            f"https://api.digitalocean.com/v2/gen-ai/knowledge_bases/{KB_UUID}/data_sources",
+            url,
             headers={"Authorization": f"Bearer {API_KEY}"},
             files={"file": (path.name, f, "text/markdown")},
         )
-    print(f"{path.name}: {response.status_code}")
+    print(f"{path.name}: {response.status_code} — {response.text}")
 
 print(f"\nDone — {len(files)} files uploaded")
