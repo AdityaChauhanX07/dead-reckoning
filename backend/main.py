@@ -34,7 +34,7 @@ async def query_image():
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    return {"status": "ok", "agent": "harold-jennings", "version": "1.0.0"}
 
 
 if __name__ == "__main__":
