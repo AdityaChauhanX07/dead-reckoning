@@ -1,9 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
-from persona.agent import ask_harold
+from persona.agent import ask_harold, ask_harold_stream
+from vision.image_handler import analyze_clock_image
 
 load_dotenv()
 
@@ -27,9 +29,24 @@ async def query(request: QueryRequest):
     return {"answer": result}
 
 
+@app.post("/query/stream")
+async def query_stream(request: QueryRequest):
+    async def event_generator():
+        async for chunk in ask_harold_stream(request.question):
+            yield f"data: {chunk}\n\n"
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
+
+
+class ImageQueryRequest(BaseModel):
+    image_base64: str
+    mime_type: str = "image/jpeg"
+
+
 @app.post("/query/image")
-async def query_image():
-    return {"status": "ok"}
+async def query_image(request: ImageQueryRequest):
+    result = await analyze_clock_image(request.image_base64, request.mime_type)
+    return {"answer": result}
 
 
 @app.get("/health")
