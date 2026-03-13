@@ -9,10 +9,10 @@ from .harold import HAROLD_SYSTEM_PROMPT  # noqa: F401 — wired in via DO dashb
 
 
 async def ask_harold(question: str) -> str:
-    agent_id = os.getenv("GRADIENT_AI_AGENT_ID")
-    api_key = os.getenv("DIGITALOCEAN_API_KEY")
+    agent_endpoint = os.getenv("AGENT_ENDPOINT")
+    api_key = os.getenv("AGENT_ACCESS_KEY")
 
-    url = f"https://api.digitalocean.com/v2/gen-ai/agents/{agent_id}/chat"
+    url = f"{agent_endpoint}/api/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -22,7 +22,7 @@ async def ask_harold(question: str) -> str:
     }
 
     try:
-        async with httpx.AsyncClient() as client:
+        async with httpx.AsyncClient(timeout=60.0) as client:
             response = await client.post(url, headers=headers, json=body)
             response.raise_for_status()
             data = response.json()
@@ -52,14 +52,16 @@ async def ask_harold(question: str) -> str:
                 raise ValueError(refusal or "No content returned")
             return content
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Harold is unavailable: {e}")
 
 
 async def ask_harold_stream(question: str) -> AsyncGenerator[str, None]:
-    agent_id = os.getenv("GRADIENT_AI_AGENT_ID")
-    api_key = os.getenv("DIGITALOCEAN_API_KEY")
+    agent_endpoint = os.getenv("AGENT_ENDPOINT")
+    api_key = os.getenv("AGENT_ACCESS_KEY")
 
-    url = f"https://api.digitalocean.com/v2/gen-ai/agents/{agent_id}/chat"
+    url = f"{agent_endpoint}/api/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",

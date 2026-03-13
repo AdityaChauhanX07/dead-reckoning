@@ -19,12 +19,14 @@ payload = {
     "name": "harold-jennings",
     "region": "tor1",
     "project_id": "e6e551fe-b535-4fd0-acf0-d94a693f8fbc",
-    "model": {"uuid": "c4811790-0c4e-11f1-b074-4e013e2ddde4"},
+    "model_uuid": "c4811790-0c4e-11f1-b074-4e013e2ddde4",
     "instruction": HAROLD_SYSTEM_PROMPT,
     "knowledge_base_uuids": [KB_UUID],
     "temperature": 0.7,
     "max_tokens": 1024,
 }
+
+print(json.dumps(payload, indent=2))
 
 response = httpx.post(
     "https://api.digitalocean.com/v2/gen-ai/agents",

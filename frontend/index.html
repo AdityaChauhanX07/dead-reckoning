@@ -397,49 +397,16 @@
       input.disabled   = true;
       showTyping();
 
-      let bubble = null;
-
       try {
-        const res = await fetch('http://localhost:8000/query/stream', {
+        const res  = await fetch('http://localhost:8000/query/stream', {
           method:  'POST',
           headers: { 'Content-Type': 'application/json' },
           body:    JSON.stringify({ question }),
         });
 
-        const reader  = res.body.getReader();
-        const decoder = new TextDecoder();
-        let   buffer  = '';
-
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-
-          buffer += decoder.decode(value, { stream: true });
-          const lines = buffer.split('\n');
-          buffer = lines.pop(); // keep incomplete last line
-
-          for (const line of lines) {
-            if (!line.startsWith('data: ')) continue;
-            const chunk = line.slice('data: '.length);
-            if (!chunk) continue;
-
-            if (bubble === null) {
-              hideTyping();
-              bubble = document.createElement('div');
-              bubble.classList.add('message', 'harold');
-              bubble.textContent = '';
-              chat.appendChild(bubble);
-            }
-
-            bubble.textContent += chunk;
-            chat.scrollTop = chat.scrollHeight;
-          }
-        }
-
-        if (bubble === null) {
-          hideTyping();
-          appendMessage('harold', 'Hmm. Something went wrong on my end.');
-        }
+        const data = await res.json();
+        hideTyping();
+        appendMessage('harold', data.answer ?? 'Hmm. Something went wrong on my end.');
       } catch (err) {
         hideTyping();
         appendMessage('harold', 'Something\u2019s gone wrong \u2014 the connection isn\u2019t holding. Try again in a moment.');

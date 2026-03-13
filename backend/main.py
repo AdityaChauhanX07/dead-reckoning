@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
@@ -8,6 +7,10 @@ from persona.agent import ask_harold, ask_harold_stream
 from vision.image_handler import analyze_clock_image
 
 load_dotenv()
+
+import os
+print("AGENT_ENDPOINT:", os.getenv("AGENT_ENDPOINT"))
+print("AGENT_ACCESS_KEY:", os.getenv("AGENT_ACCESS_KEY", "")[:10])
 
 app = FastAPI(title="dead-reckoning")
 
@@ -31,11 +34,8 @@ async def query(request: QueryRequest):
 
 @app.post("/query/stream")
 async def query_stream(request: QueryRequest):
-    async def event_generator():
-        async for chunk in ask_harold_stream(request.question):
-            yield f"data: {chunk}\n\n"
-
-    return StreamingResponse(event_generator(), media_type="text/event-stream")
+    result = await ask_harold(request.question)
+    return {"answer": result}
 
 
 class ImageQueryRequest(BaseModel):
