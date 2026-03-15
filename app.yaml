@@ -2,6 +2,7 @@ name: dead-reckoning
 region: tor
 services:
 - name: api
+  source_dir: backend
   github:
     repo: AdityaChauhan07/dead-reckoning
     branch: main
