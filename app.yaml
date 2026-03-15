@@ -1,0 +1,32 @@
+name: dead-reckoning
+region: tor
+services:
+- name: api
+  source_dir: backend
+  github:
+    repo: AdityaChauhan07/dead-reckoning
+    branch: main
+    deploy_on_push: true
+  run_command: uvicorn main:app --host 0.0.0.0 --port 8080
+  http_port: 8080
+  instance_size_slug: basic-xxs
+  instance_count: 1
+  envs:
+  - key: DIGITALOCEAN_API_KEY
+    scope: RUN_TIME
+    type: SECRET
+  - key: GRADIENT_AI_AGENT_ID
+    scope: RUN_TIME
+    type: SECRET
+  - key: AGENT_ENDPOINT
+    scope: RUN_TIME
+    type: SECRET
+  - key: AGENT_ACCESS_KEY
+    scope: RUN_TIME
+    type: SECRET
+  - key: KNOWLEDGE_BASE_UUID
+    scope: RUN_TIME
+    type: SECRET
+  - key: ANTHROPIC_API_KEY
+    scope: RUN_TIME
+    type: SECRET
